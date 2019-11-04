@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalabre=no">
+	<title>Animacion y Propiedades</title>
+	<link rel="stylesheet" href="css/transition.css">
+	<style media="screen">
+		#contenedor{
+			width: 1000px;
+			height: 600px;
+			border: 2px solid;
+			margin: 0 auto;
+			background-color: blue;
+			transition: background 1s;
+		}
+		#contenedor img{
+			width: 200px;
+			height: 200px;
+			transition-property: width,height;
+			transition-duration: 2s, 4s;
+		}
+		#contenedor img:hover{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<section id="contenedor">
+		<img src="img/balon.png" alt="imagen balon de futbol">	
+	</section>
+</body>
+</html>

@@ -1,0 +1,152 @@
+body
+{
+	background-color: #5b7989;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Dancing Script', cursive;
+}
+h1{
+	padding: 20px;
+	text-shadow: 2px #02010a;
+	color: white;
+	font-size: 20px;
+	margin-top: 2%;
+}
+header{
+	border-radius: 10px;
+	background-color: #669999;
+
+}
+header{
+	border: 1px solid #c3c3c3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+	width: 100%;
+	text-align: center;
+}
+nav{
+	position: fixed;
+	width: 100%;
+}
+
+nav ul{
+    text-align: right;
+    list-style: none;
+    margin-right: 100px;
+}
+nav ul li{
+	display: inline-block;
+	padding:20px;
+	transition: all .3s ease;
+}
+nav ul li:hover{
+	transform:scale(1.1);
+}
+nav ul li:hover a{
+	border-bottom: 1px solid #fff;
+}
+nav ul li a {
+	text-decoration: none;
+	color:#fff;
+	font-size: 20px;
+}
+
+#fotografias {
+	background-color: #d5c75f;
+	display: flex;
+	flex-flow: row wrap;
+	flex-direction: row;
+}
+.blur{
+   -webkit-filter: blur(10px);
+}
+.gris{
+   -webkit-filter: grayscale(100%);
+}
+.sepia{
+   -webkit-filter: sepia(90%);
+}
+@media (max-width: 900px) {
+#fotografias {
+	max-width: 900px;
+	width: 100%;
+}
+	#fotografias div img{
+		width: 84%;
+		margin: 4% 8%;
+	}
+}
+
+@media (min-width: 900px) {
+#fotografias {
+	min-width: 900px;
+	height: auto;
+}
+#fotografias div {
+	width: 33.3%;
+}
+#fotografias div img {
+	width: 84%;
+	margin: 4% 8%;
+}
+}
+footer{
+	background-color: #C6d5c5;
+	border-radius: 0 0 10px 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+footer div{
+    width: 25%;
+}
+footer img{
+    width: 40px;
+    height: 40px;
+   } 
+}
+.referencias span{
+	font-size: 12px;
+}
+footer {
+	width: 100%;
+	min-height: 300px;
+}.referencias {
+	width: 20%;
+	height: auto;
+	padding: 1%2.5% 1% 2.5%;
+}
+@media (max-width: 900px) {
+    .contenido {
+        width: 100%;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    footer div {
+        margin: auto;
+    }
+     header {
+    min-height: 150px;
+    }
+    header h1 {
+    width: 90%;
+    text-align: center;
+    }
+    #navprincipal {
+    width: 100%;
+    } 
+    ul {
+    text-align: center;
+    height: 2px;
+    }
+}
+}
+
+
